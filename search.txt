@@ -1,0 +1,16 @@
+/* mobile - min-width: 640px;  */
+@media only screen and (min-width: 640px) {
+}
+
+/* tablet - min-width: 768px;  */
+@media only screen and (min-width: 768px) {
+}
+
+/* laptop - min-width: 1024px;  */
+@media only screen and (min-width: 1024px) {
+}
+
+/* desktop - min-width: 1280px;  */
+@media only screen and (min-width: 1280px) {
+}
+

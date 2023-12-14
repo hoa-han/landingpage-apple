@@ -1,0 +1,90 @@
+/* color: var(--blue); */
+:root {
+  --blue: ##2997ff;
+  --white: #fff;
+  --black: #000;
+  --gray-dark: #1d1d1c;
+  --gray-light: #f5f5f7;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.text-blue {
+  color: var(--blue);
+}
+
+.text-gray-dark {
+  color: var(--gray-dark);
+}
+
+.text-gray-light {
+  color: var(--gray-light);
+}
+
+.headline {
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: 0em;
+}
+
+.subhead {
+  font-size: 20px;
+  line-height: 1.2381;
+  font-weight: 400;
+  letter-spacing: 0.016em;
+}
+
+/* mobile - min-width: 640px;  */
+@media only screen and (min-width: 640px) {
+}
+
+/* tablet - min-width: 768px;  */
+@media only screen and (min-width: 768px) {
+}
+
+/* laptop - min-width: 1024px;  */
+@media only screen and (min-width: 1024px) {
+}
+
+/* desktop - min-width: 1280px;  */
+@media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 996px;
+  }
+}
+
+.navList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+ul.navList {
+  list-style: none;
+  display: flex;
+}
+
+.navlink {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+}
+
+.navlink:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.navicon {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+}
+
+.navicon:hover {
+  color: rgba(0, 0, 0, 0.8);
+}

@@ -4,60 +4,628 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Apple (Việt Nam)</title>
+    <meta
+      name="description"
+      content="Khám phá thế giới sáng tạo của Apple và mua sắm mọi thứ từ iPhone, iPad, Apple Watch, Mac, đến Apple TV, cũng như tìm hiểu về các phụ kiện, dịch vụ giải trí và nhận sự hỗ trợ từ chuyên gia cho thiết bị." />
+    <link
+      rel="shortcut icon"
+      href="./images/apple-icon.png"
+      type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
-    />
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
 
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <header>
       <nav class="navSection">
-        <ul class="container navList bg-info">
-          <li>
-            <a class="navicon" href="#"><i class="bi bi-apple"></i></a>
-          </li>
-          <li><a class="navlink" href="#">Cửa Hàng</a></li>
-          <li><a class="navlink" href="#">Mac</a></li>
-          <li><a class="navlink" href="#">iPad</a></li>
-          <li><a class="navlink" href="#">iPhone</a></li>
-          <li><a class="navlink" href="#">Watch</a></li>
-          <li><a class="navlink" href="#">AirPods</a></li>
-          <li><a class="navlink" href="#">TV & Nhà</a></li>
-          <li><a class="navlink" href="#">Giải Trí</a></li>
-          <li><a class="navlink" href="#">Phụ Kiện</a></li>
-          <li><a class="navlink" href="#">Hỗ Trợ</a></li>
-          <li>
-            <a class="navicon" href="#"><i class="bi bi-search"></i></a>
-          </li>
-          <li>
-            <a class="navicon" href="#"><i class="bi bi-bag"></i></a>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="navList">
+            <li>
+              <a class="navicon" href="#">
+                <i class="bi bi-apple" style="font-size: 16px"></i>
+              </a>
+            </li>
+            <li><a class="navlink" href="#">Cửa Hàng</a></li>
+            <li><a class="navlink" href="#">Mac</a></li>
+            <li><a class="navlink" href="#">iPad</a></li>
+            <li><a class="navlink" href="#">iPhone</a></li>
+            <li><a class="navlink" href="#">Watch</a></li>
+            <li><a class="navlink" href="#">AirPods</a></li>
+            <li><a class="navlink" href="#">TV & Nhà</a></li>
+            <li><a class="navlink" href="#">Giải Trí</a></li>
+            <li><a class="navlink" href="#">Phụ Kiện</a></li>
+            <li><a class="navlink" href="#">Hỗ Trợ</a></li>
+            <li>
+              <a class="navicon" href="#"><i class="bi bi-search"></i></a>
+            </li>
+            <li>
+              <a class="navicon" href="#"><i class="bi bi-bag"></i></a>
+            </li>
+          </ul>
+
+          <div class="navList-mobile">
+            <div>
+              <a class="navicon" href="#">
+                <i class="bi bi-apple" style="font-size: 16px"></i>
+              </a>
+            </div>
+            <div class="navList-mobile-block-icon">
+              <div>
+                <a class="navicon" href="#"><i class="bi bi-search"></i></a>
+              </div>
+              <div>
+                <a class="navicon" href="#"><i class="bi bi-bag"></i></a>
+              </div>
+              <div id="navBurger" class="nav-burger">
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+
+            <div id="navMobileBlock" class="navList-mobile-block d-none">
+              <div class="d-flex justify-content-end">
+                <div id="closeNav" class="p-3 closeNavList">
+                  <i class="bi bi-x-lg"></i>
+                </div>
+              </div>
+              <ul class="navList-mobile-content">
+                <li><a class="navlink" href="#">Cửa Hàng</a></li>
+                <li><a class="navlink" href="#">Mac</a></li>
+                <li><a class="navlink" href="#">iPad</a></li>
+                <li><a class="navlink" href="#">iPhone</a></li>
+                <li><a class="navlink" href="#">Watch</a></li>
+                <li><a class="navlink" href="#">AirPods</a></li>
+                <li><a class="navlink" href="#">TV & Nhà</a></li>
+                <li><a class="navlink" href="#">Giải Trí</a></li>
+                <li><a class="navlink" href="#">Phụ Kiện</a></li>
+                <li><a class="navlink" href="#">Hỗ Trợ</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
 
     <main>
-      <section>1</section>
-      <section>2</section>
-      <section>3</section>
-      <section>4</section>
+      <div class="ribbon-content">
+        <div class="container">
+          <p class="ribbon-content-detail">
+            Thanh toán dần, thời hạn đến 24 tháng và chỉ trả trước 20%.
+            <a href="#">
+              Tìm hiểu thêm
+              <span class="icon-chevron-link">
+                <i class="bi bi-chevron-right"></i>
+              </span>
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <section class="homepage-section shop-section">
+        <a class="sectionLink" href="#"></a>
+        <div class="module-content">
+          <div class="text-center">
+            <div>
+              <img src="./images/homepage/shop-section.PNG" alt="" />
+            </div>
+            <h2 class="headline">
+              Vẫn còn thời gian để <br />
+              tạo nên những bất ngờ thú vị.
+            </h2>
+            <h3 class="subhead">Mua được quà "hot" dù là phút chót.</h3>
+            <p class="shop-link">
+              <a href="#">Mua sắm</a>
+              <span class="icon-chevron-link">
+                <i class="bi bi-chevron-right"></i>
+              </span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="homepage-section iphone-section">
+        <a class="sectionLink" href="#"></a>
+        <div class="module-content">
+          <div class="text-center">
+            <h2 class="headline">iPhone 15 Pro</h2>
+            <h3 class="subhead">Mua được quà "hot" dù là phút chót.</h3>
+            <div class="iphone-link">
+              <div>
+                <a href="#">Tìm hiểu thêm</a>
+                <span class="icon-chevron-link">
+                  <i class="bi bi-chevron-right"></i>
+                </span>
+              </div>
+              <div>
+                <a href="#">Mua</a>
+                <span class="icon-chevron-link">
+                  <i class="bi bi-chevron-right"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              class="w-100"
+              src="./images/homepage/iphone-section.PNG"
+              alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="homepage-section watch-section">
+        <a class="sectionLink" href="#"></a>
+        <div class="module-content">
+          <div class="text-center">
+            <h2 class="watch-headline">
+              <i class="bi bi-apple"></i> Watch <br />
+              <div>Series 9</div>
+            </h2>
+            <h3 class="subhead">
+              Chạm hai lần. Cách mới kỳ diệu để dùng Apple Watch.
+            </h3>
+            <div class="watch-link">
+              <button class="button-link-watch">Tìm hiểu thêm</button>
+              <button class="button-link-watch">Mua</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="homepage-section product-section">
+        <div class="product-content">
+          <div class="text-center">
+            <h2 class="headline">iPhone 15</h2>
+            <h3 class="subhead">Camera mới. Thiết kế mới. Mới lịm tim.</h3>
+            <div class="product-link">
+              <div>
+                <a href="#">Tìm hiểu thêm</a>
+                <span class="icon-chevron-link">
+                  <i class="bi bi-chevron-right"></i>
+                </span>
+              </div>
+              <div>
+                <a href="#">Mua</a>
+                <span class="icon-chevron-link">
+                  <i class="bi bi-chevron-right"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              class="w-100"
+              class="img-product"
+              src="./images/homepage/product-iphone.jpg"
+              alt="" />
+          </div>
+        </div>
+
+        <div class="product-content">
+          <div class="text-center">
+            <h2 class="headline">MacBook Pro</h2>
+            <h3 class="subhead">Chấn động. Ấn tượng.</h3>
+            <div class="product-link">
+              <div>
+                <a href="#">Tìm hiểu thêm</a>
+                <span class="icon-chevron-link">
+                  <i class="bi bi-chevron-right"></i>
+                </span>
+              </div>
+              <div>
+                <a href="#">Mua</a>
+                <span class="icon-chevron-link">
+                  <i class="bi bi-chevron-right"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              class="w-100"
+              class="img-product"
+              src="./images/homepage/product-macbook.jpg"
+              alt="" />
+          </div>
+        </div>
+
+        <div class="product-content">
+          <div class="text-center">
+            <h2 class="product-watch-headline">
+              <i class="bi bi-apple"></i> Watch <br />
+              <div>Ultra 2</div>
+            </h2>
+            <h3 class="subhead">Một đẳng cấp phiêu lưu mới.</h3>
+            <div class="product-link">
+              <div>
+                <a href="#">Tìm hiểu thêm</a>
+                <span class="icon-chevron-link">
+                  <i class="bi bi-chevron-right"></i>
+                </span>
+              </div>
+              <div>
+                <a href="#">Mua</a>
+                <span class="icon-chevron-link">
+                  <i class="bi bi-chevron-right"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              class="w-100"
+              class="img-product"
+              src="./images/homepage/product-watch.png"
+              alt="" />
+          </div>
+        </div>
+
+        <div class="product-content">
+          <div class="text-center">
+            <div class="d-flex align-items-center gap-2">
+              <div>
+                <img
+                  class="w-100"
+                  style="max-width: 60px"
+                  src="./images/homepage/cacbon-neutral-logo.png"
+                  alt="" />
+              </div>
+              <h2 class="headline">Carbon Neutral</h2>
+            </div>
+            <h3 class="subhead">
+              Thành tựu đầu tiên từ <br />
+              Apple Watch. Và Apple.
+            </h3>
+            <div class="product-link">
+              <div>
+                <a href="#">Tìm hiểu thêm</a>
+                <span class="icon-chevron-link">
+                  <i class="bi bi-chevron-right"></i>
+                </span>
+              </div>
+              <div>
+                <a href="#">Xem phim</a>
+                <span class="icon-play-link">
+                  <i class="bi bi-play-circle"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              class="w-100"
+              class="img-product"
+              src="./images/homepage/product-carbon-neutral.jpg"
+              alt="" />
+          </div>
+        </div>
+
+        <div class="product-content">
+          <div class="text-center">
+            <h2 class="headline">iMac</h2>
+            <h3 class="subhead">Đầy sức mạnh.</h3>
+            <div class="product-link">
+              <div>
+                <a href="#">Tìm hiểu thêm</a>
+                <span class="icon-chevron-link">
+                  <i class="bi bi-chevron-right"></i>
+                </span>
+              </div>
+              <div>
+                <a href="#">Mua</a>
+                <span class="icon-chevron-link">
+                  <i class="bi bi-chevron-right"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              class="w-100"
+              class="img-product"
+              src="./images/homepage/product-imac.jpg"
+              alt="" />
+          </div>
+        </div>
+
+        <div class="product-content airPods-content">
+          <div class="text-center">
+            <h2 class="headline airPods-headline">AirPods Pro</h2>
+            <h3 class="subhead airPods-subhead">
+              Âm Thanh Thích Ứng. Đang phát.
+            </h3>
+            <div class="product-link">
+              <div>
+                <a href="#">Tìm hiểu thêm</a>
+                <span class="icon-chevron-link">
+                  <i class="bi bi-chevron-right"></i>
+                </span>
+              </div>
+              <div>
+                <a href="#">Mua</a>
+                <span class="icon-chevron-link">
+                  <i class="bi bi-chevron-right"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              class="w-100"
+              class="img-product"
+              src="./images/homepage/product-airpods.jpg"
+              alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="slide-section">
+        <div class="slide">
+          <button
+            class="btn-previous"
+            style="
+              background-image: url(./images/homepage/slide-img-1.jpg);
+            "></button>
+          <div class="slide-active">
+            <img class="w-100" src="./images/homepage/slide-img-3.jpg" alt="" />
+
+            <div class="slide-active-content">
+              <button class="btn-active">
+                Xem ngay <i class="bi bi-play-circle-fill"></i>
+              </button>
+              <p class="desc-active">Hoạt hình vui nhộn</p>
+            </div>
+          </div>
+          <button
+            class="btn-next"
+            style="
+              background-image: url(./images/homepage/slide-img-2.jpg);
+            "></button>
+        </div>
+        <div class="slide-dots">
+          <div class="dot"></div>
+          <div class="dot dot-active"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </section>
     </main>
 
-    <footer></footer>
+    <footer class="mt-3 pb-5">
+      <div class="container">
+        <p class="foot-note">Apple TV+ yêu cầu đăng ký thuê bao.</p>
+        <div class="quicklinks">
+          <div>
+            <ul class="cate-list">
+              <div class="d-flex justify-content-between">
+                <p><strong>Mua Sắm Và Tìm Hiểu</strong></p>
+                <div class="toggleCateList">
+                  <div class="p-2 icon-down">
+                    <i class="bi bi-chevron-down"></i>
+                  </div>
+                  <div class="p-2 icon-up d-none">
+                    <i class="bi bi-chevron-up"></i>
+                  </div>
+                </div>
+              </div>
+              <li>Cửa Hàng</li>
+              <li>Mac</li>
+              <li>iPad</li>
+              <li>iPhone</li>
+              <li>Watch</li>
+              <li>AirPods</li>
+              <li>TV & Nhà</li>
+              <li>AirTag</li>
+              <li>Phụ Kiện</li>
+            </ul>
+            <ul class="cate-list">
+              <div class="d-flex justify-content-between">
+                <p><strong>Ví Apple</strong></p>
+                <div class="toggleCateList">
+                  <div class="p-2 icon-down">
+                    <i class="bi bi-chevron-down"></i>
+                  </div>
+                  <div class="p-2 icon-up d-none">
+                    <i class="bi bi-chevron-up"></i>
+                  </div>
+                </div>
+              </div>
+              <li>Ví</li>
+              <li>Apple Pay</li>
+            </ul>
+          </div>
+
+          <div>
+            <ul class="cate-list">
+              <div class="d-flex justify-content-between">
+                <p><strong>Tài Khoản</strong></p>
+                <div class="toggleCateList">
+                  <div class="p-2 icon-down">
+                    <i class="bi bi-chevron-down"></i>
+                  </div>
+                  <div class="p-2 icon-up d-none">
+                    <i class="bi bi-chevron-up"></i>
+                  </div>
+                </div>
+              </div>
+              <li>Quản Lý ID Apple Của Bạn</li>
+              <li>Tài Khoản Apple Store</li>
+              <li>iCloud.com</li>
+            </ul>
+            <ul class="cate-list">
+              <div class="d-flex justify-content-between">
+                <p><strong>Giải Trí</strong></p>
+                <div class="toggleCateList">
+                  <div class="p-2 icon-down">
+                    <i class="bi bi-chevron-down"></i>
+                  </div>
+                  <div class="p-2 icon-up d-none">
+                    <i class="bi bi-chevron-up"></i>
+                  </div>
+                </div>
+              </div>
+              <li>Apple One</li>
+              <li>Apple TV+</li>
+              <li>Apple Music</li>
+              <li>Apple Arcade</li>
+              <li>Apple Podcasts</li>
+              <li>Apple Books</li>
+            </ul>
+          </div>
+
+          <div>
+            <ul class="cate-list">
+              <div class="d-flex justify-content-between">
+                <p><strong>Apple Store</strong></p>
+                <div class="toggleCateList">
+                  <div class="p-2 icon-down">
+                    <i class="bi bi-chevron-down"></i>
+                  </div>
+                  <div class="p-2 icon-up d-none">
+                    <i class="bi bi-chevron-up"></i>
+                  </div>
+                </div>
+              </div>
+              <li>Ứng Dụng Apple Store</li>
+              <li>Apple Trade In</li>
+              <li>Tài Chính</li>
+              <li>Tình Trạng Đơn Hàng</li>
+              <li>Hỗ Trợ Mua Hàng</li>
+            </ul>
+          </div>
+
+          <div>
+            <ul class="cate-list">
+              <div class="d-flex justify-content-between">
+                <p><strong>Dành Cho Doanh Nghiệp</strong></p>
+                <div class="toggleCateList">
+                  <div class="p-2 icon-down">
+                    <i class="bi bi-chevron-down"></i>
+                  </div>
+                  <div class="p-2 icon-up d-none">
+                    <i class="bi bi-chevron-up"></i>
+                  </div>
+                </div>
+              </div>
+              <li>Apple Và Doanh Nghiệp</li>
+              <li>Mua Hàng Cho Doanh Nghiệp</li>
+            </ul>
+            <ul class="cate-list">
+              <div class="d-flex justify-content-between">
+                <p><strong>Cho Giáo Dục</strong></p>
+                <div class="toggleCateList">
+                  <div class="p-2 icon-down">
+                    <i class="bi bi-chevron-down"></i>
+                  </div>
+                  <div class="p-2 icon-up d-none">
+                    <i class="bi bi-chevron-up"></i>
+                  </div>
+                </div>
+              </div>
+              <li>Apple Và Giáo Dục</li>
+              <li>Mua Hàng Cho Bậc Đại Học</li>
+            </ul>
+            <ul class="cate-list">
+              <div class="d-flex justify-content-between">
+                <p><strong>Cho Chăm Sóc Sức Khỏe</strong></p>
+                <div class="toggleCateList">
+                  <div class="p-2 icon-down">
+                    <i class="bi bi-chevron-down"></i>
+                  </div>
+                  <div class="p-2 icon-up d-none">
+                    <i class="bi bi-chevron-up"></i>
+                  </div>
+                </div>
+              </div>
+              <li>Apple Trong Chăm Sóc Sức Khỏe</li>
+              <li>Sức Khỏe Trên Apple Watch</li>
+            </ul>
+          </div>
+
+          <div>
+            <ul class="cate-list">
+              <div class="d-flex justify-content-between">
+                <p><strong>Giá Trị Cốt Lõi Của Apple</strong></p>
+                <div class="toggleCateList">
+                  <div class="p-2 icon-down">
+                    <i class="bi bi-chevron-down"></i>
+                  </div>
+                  <div class="p-2 icon-up d-none">
+                    <i class="bi bi-chevron-up"></i>
+                  </div>
+                </div>
+              </div>
+              <li>Trợ Năng</li>
+              <li>Môi Trường</li>
+              <li>Quyền Riêng Tư</li>
+              <li>Trách Nhiệm Nhà Cung Cấp</li>
+            </ul>
+            <ul class="cate-list">
+              <div class="d-flex justify-content-between">
+                <p><strong>Về Apple</strong></p>
+                <div class="toggleCateList">
+                  <div class="p-2 icon-down">
+                    <i class="bi bi-chevron-down"></i>
+                  </div>
+                  <div class="p-2 icon-up d-none">
+                    <i class="bi bi-chevron-up"></i>
+                  </div>
+                </div>
+              </div>
+              <li>Newsroom</li>
+              <li>Lãnh Đạo Của Apple</li>
+              <li>Nhà Đầu Tư</li>
+              <li>Đạo Đức & Quy Tắc</li>
+              <li>Sự Kiện</li>
+              <li>Liên Hệ Apple</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="foot-note">
+          Xem thêm cách để mua hàng: <a href="#">Tìm cửa hàng bán lẻ</a> gần
+          bạn. Hoặc gọi 1800 1192.
+        </p>
+
+        <div class="right-area-content">
+          <p>Bản quyền © Apple Inc. 2023 Bảo lưu mọi quyền.</p>
+          <div title="Chọn khu vực của bạn" class="choose-area">Việt Nam</div>
+        </div>
+
+        <div class="policy-block">
+          <div class="policy-link">Chính Sách Quyền Riêng Tư</div>
+          <div class="policy-link">Điều Khoản Sử Dụng</div>
+          <div class="policy-link">Bán Hàng Và Hoàn Tiền</div>
+          <div class="policy-link">Pháp Lý</div>
+          <div class="policy-link">Bản Đồ Trang Web</div>
+        </div>
+
+        <p class="company-info">
+          Công Ty TNHH Apple Việt Nam<br />
+          ĐKKD số 0313510827, do Sở KH&ĐT thành phố Hồ Chí Minh cấp ngày 28
+          tháng 10 năm 2015<br />
+          Giấy phép kinh doanh số 0313510827/KD-0137 do Sở Công Thương thành phố
+          Hồ Chí Minh cấp ngày 23 tháng 5 năm 2018<br />
+          Địa chỉ: Phòng 901, Ngôi Nhà Đức Tại Tp. Hồ Chí Minh, số 33, đường Lê
+          Duẩn, Phường Bến Nghé, Quận 1, thành phố Hồ Chí Minh, Việt Nam<br />
+          Điện thoại: 1800 1192
+        </p>
+      </div>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
   </body>
 </html>

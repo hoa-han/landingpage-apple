@@ -51,9 +51,10 @@ section {
 .timeline-detail-time {
   color: blue;
   font-size: 20px;
+  padding-top: 0.5rem;
 }
 
 .timeline-detail-time ~ p {
   margin-top: 8px;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
 }
